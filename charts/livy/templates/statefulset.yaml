@@ -41,7 +41,7 @@ spec:
         env:
         {{- if .Values.rbac.create }}
         - name: LIVY_SPARK_KUBERNETES_AUTHENTICATE_DRIVER_SERVICE1ACCOUNT1NAME
-          value: {{ include "livy.fullname" . }}-spark
+          value: {{ include "livy.fullname" . }}
         - name: LIVY_SPARK_KUBERNETES_NAMESPACE
           value: {{ .Release.Namespace }}
         {{- end }}
