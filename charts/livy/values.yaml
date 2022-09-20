@@ -13,7 +13,7 @@ nameOverride: ""
 fullnameOverride: ""
 
 rbac:
-  create: true
+  create: false
 
 serviceAccount:
   # Specifies whether a service account should be created
